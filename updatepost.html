@@ -23,30 +23,33 @@
             </ul>
         </div>
     </nav>
- 
-        <h4>Update Post</h4>
-        <hr />
-        <div class="row ">
-            <div class="col-md-4">
-                <form method="post">
-                    <div class="form-group">
-                        <label for="formGroupExampleInput">Title</label>
-                        <input type="text" class="form-control" id="title">
-                    </div>
-                    <div class="form-group">
-                        <label for="formGroupExampleInput2">Description</label>
-                        <input type="text" class="form-control" id="description">
-                    </div>
-                    <div class="form-group">
-                        <input onclick="editPost()" type="submit" value="Update" class="btn btn-primary" />
-                        <input onclick="deletePost()" type="submit" value="Delete" class="btn btn-primary" />
-                    </div>
+    
+    <h4 class="text-center m-4">Update Post</h4>
+    <hr />
 
-                </form>
+    <div class="d-flex justify-content-center ">
+        <div class="w-100 p-3 card  bg-muted mb-3" style="max-width: 50rem;">
+            <div class="row p-5">
+                    <form method="post" class="d-flex flex-column justify-content-center align-items-center mb-5">
+                        <div class="form-group w-75 m-3">
+                            <label for="formGroupExampleInput" class="h4">Title</label>
+                            <input type="text" class="form-control" id="title">
+                        </div>
+                        <div class="form-group w-75 m-3">
+                            <label for="formGroupExampleInput2" class="h4">Description</label>
+                            <input type="text" class="form-control" id="description">
+                        </div>
+                        <div class="form-group mt-3">
+                            <input onclick="editPost()" type="submit" value="Update" class="btn btn-primary" />
+                            <input onclick="deletePost()" type="submit" value="Delete" class="btn btn-primary" />
+                        </div>
+                        
+                        <div class="mt-4"><a href="viewposts.html"> return to view</a></div>
+                    </form>
             </div>
         </div>
-        <div><a href="viewposts.html"> return to view</a></div>
-    
+    </div>
+
 
     <script type="text/javascript" src="./js/Edit.js"></script>
 </body>

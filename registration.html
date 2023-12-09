@@ -23,30 +23,38 @@
     </div>
   </nav>
   
-    <form>
-      <h3>Register</h3>
-      <div class="form-group col-md-6">
-        <label for="inputUsername">Username</label>
-        <input id="regUsername" type="text" class="form-control" placeholder="Enter Username" required>
-      </div>
-      <div class="form-group col-md-6">
-        <label for="inputEmail">Email</label>
-        <input id="regEmail" type="email" class="form-control" placeholder="Enter Email" required>
-      </div>
-      <div class="form-group col-md-6">
-        <label for="inputPassword">Password</label>
-        <input id="regPassword" type="password" class="form-control" placeholder="Enter Password" required>
-      </div>
-      <div class="form-group col-md-6">
-        <label for="inputConfirmPass">Confirm Password</label>
-        <input id="regConfirmPass" type="password" class="form-control" placeholder="Confirm Password" required>
+  <h1 class="text-center m-4">Register</h1>
+  <hr>
 
-        <div>
-          <input onclick="userRegister()" type="submit" value="Register" class="btn btn-primary" />
-          <p>return to <a href="login.html"> LOG IN </a></p>
-        </div>
+  <div class="d-flex justify-content-center ">
+    <div class="w-100 p-3 card  bg-muted mb-3" style="max-width: 50rem;">
+      <div class="row p-5">
+        <form method="post" class="d-flex flex-column justify-content-center align-items-center mb-5">
 
-    </form>
+          <div class="form-group col-md-6 mb-4">
+            <label for="inputUsername" class="h4">Username</label>
+            <input id="regUsername" type="text" class="form-control" placeholder="Enter Username" required>
+          </div>
+          <div class="form-group col-md-6 mb-4">
+            <label for="inputEmail" class="h4">Email</label>
+            <input id="regEmail" type="email" class="form-control" placeholder="Enter Email" required>
+          </div>
+          <div class="form-group col-md-6 mb-4">
+            <label for="inputPassword" class="h4">Password</label>
+            <input id="regPassword" type="password" class="form-control" placeholder="Enter Password" required>
+          </div>
+          <div class="form-group col-md-6 mb-4">
+            <label for="inputConfirmPass" class="h4">Confirm Password</label>
+            <input id="regConfirmPass" type="password" class="form-control" placeholder="Confirm Password" required>
+
+            <div class="mt-4 ">
+              <input onclick="userRegister()" type="submit" value="Register" class="btn btn-primary mb-2" />
+              <br>
+              <p>return to <a href="login.html"> LOG IN </a></p>
+            </div>
+          </div>
+      </div>
+    </div>
  
 
 </body>
